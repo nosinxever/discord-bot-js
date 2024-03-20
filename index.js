@@ -19,17 +19,13 @@ client.once(Events.ClientReady, readyClient => {
 	console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 });
 
-
 client.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
-
     const { commandName } = interaction;
-
     if (commandName === 'hello') {
         await interaction.reply('Hello world 2024');
     }
 });
-
 
 // Log in to Discord with your client's token
 client.login(AUTH_TOKEN);
