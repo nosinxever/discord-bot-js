@@ -45,3 +45,6 @@ for (const folder of commandFolders) {
 client.on(Events.InteractionCreate, interaction => {
 	console.log(interaction);
 });
+
+//https://discordjs.guide/creating-your-bot/command-deployment.html#command-registration
+//https://discord.com/developers/applications
